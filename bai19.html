@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="game-container">
+        <header>
+            <h1>Memory Game</h1>
+            <div class="stats">
+                <p>Lượt click: <span id="move-count">0</span></p>
+                <button id="reset-btn">Chơi lại</button>
+            </div>
+        </header>
+
+        <section class="memory-game" id="game-board">
+            </section>
+    </main>
+
+    <div id="victory-modal" class="modal">
+        <div class="modal-content">
+            <h2>Chúc mừng! 🎉</h2>
+            <p>Bạn đã hoàn thành với <span id="final-moves">0</span> lượt click.</p>
+            <button onclick="location.reload()">Chơi tiếp</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
